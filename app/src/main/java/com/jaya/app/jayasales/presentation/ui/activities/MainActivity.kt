@@ -32,6 +32,7 @@ class MainActivity : ComponentActivity() {
                       navHostController = rememberNavController(),
                       navigationChannel = baseViewModel.appNavigator.navigationChannel,
                       paddingValues = paddingValues,
+                      baseViewModel = baseViewModel
                   )
 
               }

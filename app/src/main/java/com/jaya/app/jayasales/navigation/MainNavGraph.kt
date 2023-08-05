@@ -8,6 +8,7 @@ import androidx.navigation.NavHostController
 import com.jaya.app.core.common.constants.Destination
 import com.jaya.app.core.utils.helper.NavigationIntent
 import com.jaya.app.jayasales.navigation.screen_transition.AppScreenTransitions
+import com.jaya.app.jayasales.presentation.ui.view_models.BaseViewModel
 import kotlinx.coroutines.channels.Channel
 
 @Composable
@@ -15,7 +16,7 @@ fun MainNavGraph(
     navHostController: NavHostController,
     navigationChannel: Channel<NavigationIntent>,
     paddingValues: PaddingValues,
-   // baseViewModel: BaseViewModel
+    baseViewModel: BaseViewModel
 
 ){
     navHostController.NavEffects(navigationChannel)
